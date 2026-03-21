@@ -1,121 +1,144 @@
-# Privacy Policy — HabitForge
+# HabitForge — Privacy Policy
 
 **Effective Date:** 2026-03-21
 **Last Updated:** 2026-03-21
+**Version:** 1.0.0
 
-This Privacy Policy describes how SudarshanTechLabs ("we", "our", or "us") handles information in connection with the HabitForge mobile application ("the App") available on Google Play.
-
----
-
-## 1. Data Collection
-
-**HabitForge does not collect, transmit, or share any personal data.**
-
-All data you enter — including habits, completions, notes, photos, and preferences — is stored **locally on your device only**. We do not have access to this data, and it is never sent to any server, cloud service, or third party.
-
-The App does not require you to create an account, log in, or provide any personal information.
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-## 2. Data We Do NOT Collect
-
-We do not collect:
-
-- Name, email address, or contact information
-- Location data (location permissions, if granted, are used solely for on-device local reminders and never transmitted)
-- Device identifiers, advertising IDs, or analytics data
-- Usage statistics or crash reports (unless you explicitly enable third-party crash reporting in a future update)
-- Payment information (In-app purchases are processed entirely by Google Play and governed by Google's Privacy Policy)
-- Photos or media files beyond what you explicitly attach to habit entries (stored on-device only)
+HabitForge is a habit tracking app for Android. It helps you build and maintain daily habits with progress charts, home screen widgets, optional location-based reminders, and PDF exports. All personal habit data is stored on your device.
 
 ---
 
-## 3. Data Use
+## Data Collection
 
-Any data you enter into HabitForge is used solely to provide the app's features to you on your own device:
+### Data Stored Locally on Your Device
 
-- Habit entries are stored in a local Room database on your device.
-- Reminder preferences are used locally by Android WorkManager to schedule notifications.
-- Theme and preference settings are stored in Android DataStore on your device.
-- Exported files (PDF, JSON, CSV) are saved to your device storage and are entirely under your control.
+| Data | Purpose | Storage |
+|---|---|---|
+| Habit definitions (name, frequency, goal) | Core habit tracking | Room database (encrypted) |
+| Daily habit completions and streaks | Progress tracking | Room database (encrypted) |
+| App preferences and theme settings | Personalisation | DataStore on your device |
+| PDF exports | Data export | App private storage |
 
----
+### Location Data
 
-## 4. Third-Party Services
+If you enable location-based reminders, HabitForge uses Google Location Services to trigger reminders when you arrive at or leave a specified location. Location is used only to trigger the reminder and is not stored by Sudarshan Tech Labs or transmitted to any server.
 
-**Google Play Billing**
-In-App purchases (HabitForge Pro) are processed by Google Play. Please refer to [Google's Privacy Policy](https://policies.google.com/privacy) for details on how Google handles payment information.
+### In-App Purchases
 
-**Android Platform Services**
-The App uses standard Android platform services (WorkManager, notifications, DataStore). These are governed by Google's Android Privacy Policy.
-
-We do not integrate any third-party analytics, advertising, social login, or tracking SDKs.
+Premium features are available via Google Play Billing. Sudarshan Tech Labs does not receive or store payment information.
 
 ---
 
-## 5. Permissions
+## How We Use Your Data
 
-HabitForge may request the following Android permissions:
-
-| Permission | Purpose |
+| Purpose | Data Used |
 |---|---|
-| `POST_NOTIFICATIONS` | Display habit reminder notifications |
-| `SCHEDULE_EXACT_ALARM` / `USE_EXACT_ALARM` | Schedule precise habit reminders |
-| `ACCESS_FINE_LOCATION` / `ACCESS_COARSE_LOCATION` | On-device location-based reminder triggers (never transmitted) |
-| `CAMERA` | Attach photos to habit completions (stored on-device only) |
-| `READ_MEDIA_IMAGES` | Select photos from gallery for habit completions |
-| `INTERNET` | In-app purchase verification via Google Play Billing |
-
-You may revoke any permission at any time through your device's Settings > Apps > HabitForge > Permissions. Revoking a permission may disable the corresponding feature.
+| Display and track your habits | Local habit data |
+| Show habits on your home screen widget | Local habit data (via Glance widget) |
+| Send location-based reminders | Google Location Services (not stored) |
+| Export habit data to PDF | Local habit data (iText7, on-device) |
+| Provide premium features | Google Play Billing |
 
 ---
 
-## 6. Data Retention & Deletion
+## Data Storage and Security
 
-Your data lives entirely on your device. You can delete all app data at any time by:
+- **Habit data:** Stored in an encrypted Room database (security-crypto) in the App's private directory
+- **No cloud storage:** Sudarshan Tech Labs operates no backend server
+- **Android sandbox:** Data is protected by Android's application sandboxing
 
-1. Opening HabitForge → Settings → Advanced Settings → **Delete All Data**, or
-2. Going to your device Settings → Apps → HabitForge → Storage → **Clear Data**.
+## Data Retention
 
-Uninstalling the App removes all locally stored data permanently.
-
----
-
-## 7. Children's Privacy
-
-HabitForge is not directed at children under the age of 13. We do not knowingly collect any personal information from children. Since the App collects no personal data from any user, there is no specific risk to children's privacy through normal use of the App.
-
-If you are a parent or guardian and believe your child has provided personal information through the App, please contact us at the address below and we will take appropriate action.
+| Data | Retention |
+|---|---|
+| All local habit data | Until you delete it or uninstall the App |
 
 ---
 
-## 8. Security
+## Data Sharing
 
-Although we do not transmit your data, we take reasonable precautions to protect data stored on your device:
-
-- Sensitive preferences may be encrypted using Android's EncryptedSharedPreferences.
-- The App uses Android's network security configuration to restrict network traffic.
-- No credentials or personal data are logged.
+We do not sell or share your habit data. Location data used for reminders is processed on-device by Google Play Services and is not stored by Sudarshan Tech Labs.
 
 ---
 
-## 9. Changes to This Policy
+## Permissions Explained
 
-We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last Updated" date at the top of this document. The latest version will always be available within the App and on our official listing.
-
-Continued use of HabitForge after any changes constitutes acceptance of the updated policy.
-
----
-
-## 10. Contact Us
-
-If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact:
-
-**SudarshanTechLabs**
-Bangkok, Bangkok, Thailand
-
-Email: **sudarshantechlabs@gmail.com**
+| Permission | Why It Is Needed |
+|---|---|
+| `INTERNET` | Required for Google Play Billing and Google Location Services |
+| `POST_NOTIFICATIONS` | Send habit reminders and completion alerts |
 
 ---
 
-*This privacy policy applies to HabitForge version 1.0.0 and later, published by SudarshanTechLabs.*
+## Your Rights and Controls
+
+- **Delete individual habits:** Use the delete function within the App
+- **Delete all data:** Uninstall the App or go to Android Settings > Apps > HabitForge > Storage > Clear Data
+- **Disable location reminders:** Turn off in habit settings
+
+---
+
+## Children's Privacy
+
+HabitForge is not directed at children under 13. We do not knowingly collect personal information from children.
+
+---
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+
+- In-app notification
+- Updated policy date on this page
+
+Continued use of HabitForge after changes become effective constitutes your acceptance of the updated policy.
+
+---
+
+## Contact Us
+
+For privacy questions, data access requests, or account deletion:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## GDPR Rights (EU Users)
+
+If you are in the European Economic Area, you have the right to:
+
+- **Access** — Request a copy of your personal data
+- **Rectification** — Correct inaccurate data
+- **Erasure** — Request deletion of your data
+- **Restrict Processing** — Limit how we use your data
+- **Data Portability** — Receive your data in a portable format
+- **Object** — Object to certain types of processing
+
+To exercise these rights, contact us at the details above.
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Habit data | Local only | No | App functionality |
+| Location (if enabled) | On-device trigger | No | Location-based reminders |
+
+---
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-03-21
