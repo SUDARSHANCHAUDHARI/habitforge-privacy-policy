@@ -18,16 +18,19 @@
     hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
     strong { font-weight: 700; }
     @media (max-width: 640px) { article { padding: 20px; } main { padding: 20px 12px 48px; } }
+      table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+    th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--bg); font-weight: 700; }
+    code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 0.9em; }
+    @media (max-width: 640px) { table, th, td { font-size: 0.85rem; } th, td { padding: 6px 7px; } }
   </style>
 </head>
 <body>
   <main>
     <article>
       <h1>HabitForge Privacy Policy</h1>
-      <p><strong>Effective Date:</strong> May 17, 2026</p>
-      <p><em>Last updated: May 17, 2026</em></p>
-      <p><strong>Version:</strong> 1.1.0</p>
-      <p>HabitForge (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is an Android app. HabitForge is a habit tracker for Android that stores habits, completions, notes, photos, and preferences locally on your device. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using HabitForge you agree to the practices described below.</p>
+      <p><strong>Effective Date:</strong> May 17, 2026 _Last updated: November 9, 2026_ <strong>Version:</strong> 1.2.0</p>
+      <p>HabitForge ("we," "our," or "us") is an Android app. HabitForge is a habit tracker for Android that stores habits, completions, notes, photos, and preferences locally on your device. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using HabitForge you agree to the practices described below.</p>
       <h2>Information We Collect</h2>
       <h3>Location Data</h3>
       <ul>
@@ -35,57 +38,54 @@
       </ul>
       <h3>Account Information</h3>
       <ul>
-      <li>No HabitForge account is required.</li>
-      <li>Google Play Billing may process purchase status for premium features.</li>
+      <li><strong>No account, no sign-in, and no account data of any kind.</strong> HabitForge has never had accounts.</li>
+      <li><strong>There are no in-app purchases and no premium tier.</strong> Earlier versions of this policy described Google Play Billing; the app no longer contains it.</li>
       </ul>
       <h3>Device Information</h3>
       <ul>
-      <li>Habit names, completion history, notes, photos you attach, reminders, preferences, and purchase entitlement state may be stored locally.</li>
+      <li>Habit names, completion history, notes, photos you attach, reminders and preferences are stored on your device and nowhere else.</li>
       </ul>
       <h2>How We Use Your Information</h2>
       <h3>Location Sharing</h3>
       <ul>
       <li>HabitForge does not use your location.</li>
       </ul>
-      <h3>Account Management</h3>
+      <h3>What the App Does With Your Data</h3>
       <ul>
-      <li>Track habits and completions.</li>
-      <li>Show reminders and maintain local preferences.</li>
-      <li>Manage premium entitlement status through Google Play Billing.</li>
+      <li>Tracks habits and completions, on your device.</li>
+      <li>Shows reminders and keeps your preferences, on your device.</li>
       </ul>
       <h3>Service Improvement</h3>
       <ul>
-      <li>Improve local habit tracking workflows.</li>
-      <li>We do not sell, rent, or monetize your habit data.</li>
+      <li><strong>The app contains no analytics and no crash reporting.</strong> We receive nothing about how you use it. Earlier versions of this policy named Firebase; the app has never shipped it — the Firebase lines in its build file are commented out.</li>
+      <li>We do not sell, rent, or monetize your habit data. We never receive it in the first place.</li>
       </ul>
       <h2>Storage and Retention</h2>
       <h3>Data Storage</h3>
       <ul>
-      <li>Habits, notes, photos, completions, and preferences are stored locally using on-device storage such as Room/DataStore.</li>
-      <li>Google Play handles purchase processing for premium features.</li>
+      <li>Habits, notes, photos, completions, and preferences are stored on your device, in a Room database and DataStore inside the app's private storage.</li>
+      <li><strong>There is no cloud copy.</strong> No Sudarshan Tech Labs server exists for this app, and the app does not sign in to anything.</li>
       </ul>
       <h3>Data Retention</h3>
       <ul>
       <li>Local habit data remains until you delete it, clear app data, or uninstall the app.</li>
+      <li>A CSV export you create is a file you own. It stays wherever you saved or sent it until you delete it.</li>
       </ul>
       <h3>Data Security</h3>
       <ul>
-      <li>Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.</li>
-      <li>Local data remains on your device or browser unless a feature you use requires a named third-party service.</li>
-      <li>Network communication uses HTTPS/TLS where applicable.</li>
-      <li>You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.</li>
+      <li>Your habit data sits in the app's private storage, protected by Android's application sandbox. The app does not add encryption of its own on top of that.</li>
+      <li><strong>The app does not request the <code>INTERNET</code> permission, so it cannot send your data anywhere.</strong> This is the strongest statement in this policy and it is the one worth checking: the permission list on the Play Store shows notifications only.</li>
+      <li>You should protect your device with a screen lock, since that is what stands between someone holding your phone and your habit notes.</li>
       </ul>
       <h2>Data Sharing</h2>
-      <h3>Family Groups</h3>
+      <h3>Sharing With Other People</h3>
       <ul>
-      <li>HabitForge does not use family groups unless explicitly described in this policy.</li>
-      <li>If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.</li>
-      <li>You control feature use through the app settings, permissions, account controls, or platform settings.</li>
+      <li><strong>HabitForge has no sharing, pairing or collaboration features.</strong> There is nobody to share with, and no way to.</li>
       </ul>
       <h3>Third Parties</h3>
       <ul>
-      <li>Google Play Billing processes purchase data when you buy premium features.</li>
-      <li>Habit content is not sent to Sudarshan Tech Labs servers.</li>
+      <li><strong>There are none.</strong> The app sends data to no company, including us. It has no analytics, no crash reporting, no advertising SDK, no in-app purchases and no backend.</li>
+      <li>The only things that leave the app are ones you start by hand: a CSV export you save or send yourself, and tapping a link to this policy, the project's GitHub page or the Play Store listing, each of which opens in your browser or in the Play Store app rather than inside HabitForge.</li>
       </ul>
       <p>We do <strong>not</strong> share your data with:</p>
       <ul>
@@ -96,12 +96,20 @@
       <h2>Permissions Used</h2>
       <h3>Required Permissions</h3>
       <ul>
-      <li><strong>INTERNET</strong>: Used for Google Play Billing and related network checks.</li>
-      <li><strong>POST_NOTIFICATIONS</strong>: Used for habit reminders.</li>
+      <li><strong>POST_NOTIFICATIONS</strong>: Used for habit reminders. <strong>This is the only permission HabitForge itself declares.</strong></li>
       </ul>
+      <p>The app does <strong>not</strong> declare <code>INTERNET</code>. Without it Android will not let the app open a network connection at all, which is why this policy can state flatly that your habit data cannot leave your device.</p>
+      <h3>Permissions added by Android libraries</h3>
+      <p>The app declares the one above. The finished build carries four more, declared by WorkManager — the Android library that runs your reminders on schedule — rather than by HabitForge's own code. They appear in the permission list you see on the Play Store, so they are listed here for completeness:</p>
+      <ul>
+      <li><strong>WAKE_LOCK</strong> and <strong>RECEIVE_BOOT_COMPLETED</strong>: how Android runs a reminder while the phone is idle, and re-registers your reminders after you restart the phone.</li>
+      <li><strong>FOREGROUND_SERVICE</strong>: how WorkManager runs scheduled work.</li>
+      <li><strong>ACCESS_NETWORK_STATE</strong>: lets a library <em>check</em> whether a network exists. <strong>It does not grant the ability to use one</strong> — that would need <code>INTERNET</code>, which this app does not declare. WorkManager declares this permission in every app that uses it, whether or not the app does anything with a network.</li>
+      </ul>
+      <p>Verified against the merged manifest of the release build rather than the app's own manifest file. The merged release manifest contains exactly these five permissions and no others.</p>
       <h3>Optional Permissions</h3>
       <ul>
-      <li>Photos and reminders are optional features controlled by you.</li>
+      <li>Attaching a photo to a habit completion and turning reminders on or off are optional features you control. Photos you attach stay in the app's private storage.</li>
       </ul>
       <h2>Your Rights and Controls</h2>
       <h3>Location Sharing Control</h3>
@@ -110,7 +118,7 @@
       </ul>
       <h3>Account Management</h3>
       <ul>
-      <li>No app account is required; Google Play purchases are managed through your Google account.</li>
+      <li>There is no account to manage, and no purchases.</li>
       </ul>
       <h3>Data Access</h3>
       <ul>
@@ -129,96 +137,73 @@
       <p>To exercise these rights, contact us using the methods in the Contact Us section.</p>
       <h3>Permissions</h3>
       <ul>
-      <li>You can revoke Android permissions in Android Settings -&gt; Apps -&gt; HabitForge -&gt; Permissions.</li>
-      <li>Browser permissions and storage can be managed in your browser site settings for web apps.</li>
-      <li>Revoking required permissions may prevent related features from functioning.</li>
+      <li>You can revoke the notification permission in Android Settings -&gt; Apps -&gt; HabitForge -&gt; Notifications. Reminders stop; nothing else changes.</li>
       </ul>
-      <h2>Children&#39;s Privacy</h2>
+      <h2>Children's Privacy</h2>
       <ul>
       <li>Our app is <strong>not intended for children under 13</strong>.</li>
       <li>We do not knowingly collect data from children under 13.</li>
       <li>If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.</li>
-      <li>Parents and guardians should supervise children&#39;s use of apps that store personal content.</li>
+      <li>Parents and guardians should supervise children's use of apps that store personal content.</li>
       </ul>
       <h2>Security</h2>
       <ul>
-      <li>Local data is protected by Android, browser, or operating-system app sandboxing.</li>
-      <li>Network communication uses HTTPS/TLS where applicable.</li>
-      <li>Third-party services named in this policy provide their own security controls and privacy policies.</li>
-      <li>You are responsible for protecting your device, browser profile, and account credentials.</li>
-      <li>We do not sell your personal data.</li>
+      <li>Local data is protected by Android's application sandbox. HabitForge is an Android app only; there is no web or browser version of it.</li>
+      <li>The app makes no network connections, so there is no network traffic to secure.</li>
+      <li>There are no third-party services in this app.</li>
+      <li>You are responsible for protecting your device, which for this app means a screen lock.</li>
+      <li>We do not sell your personal data. We never receive it.</li>
       </ul>
       <h2>Changes to This Policy</h2>
       <p>We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:</p>
       <ul>
       <li>Noted in the app release notes or repository when applicable</li>
-      <li>Reflected with a new &quot;Last updated&quot; date</li>
+      <li>Reflected with a new "Last updated" date</li>
       <li>Communicated in the app or project page if the change is significant</li>
       </ul>
-      <p>The &quot;Last updated&quot; date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      <p>The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
       <h2>Contact Us</h2>
       <p>If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:</p>
       <ul>
-      <li><strong>GitHub Repository:</strong> https://github.com/SUDARSHANCHAUDHARI/habitforge-privacy-policy</li>
+      <li><strong>GitHub Repository:</strong> <a href="https://github.com/SUDARSHANCHAUDHARI/habitforge-privacy-policy">https://github.com/SUDARSHANCHAUDHARI/habitforge-privacy-policy</a></li>
       <li><strong>Email:</strong> sunny.sudarshan@gmail.com</li>
-      <li><strong>Main App Repository:</strong> https://github.com/SUDARSHANCHAUDHARI/HabitForge</li>
+      <li><strong>Main App Repository:</strong> <a href="https://github.com/SUDARSHANCHAUDHARI/HabitForge">https://github.com/SUDARSHANCHAUDHARI/HabitForge</a></li>
       </ul>
       <p>We will respond as quickly as possible, typically within 48 hours.</p>
       <h2>Data Deletion</h2>
-      <h3>How to Delete Your Account</h3>
+      <h3>How to Delete Your Account:</h3>
       <p>This app does not require an account. You can delete local app data using the options below:</p>
       <h4>Option 1: In-App Deletion</h4>
-      <ol>
-      <li>Open HabitForge</li>
-      <li>Delete individual entries, reminders, history, or settings where the app provides controls</li>
-      <li>Or use Android/browser settings to clear app/site data</li>
-      <li>Uninstalling the app also removes local app-private data</li>
-      </ol>
+      <p>1. Open HabitForge 2. Delete individual entries, reminders, history, or settings where the app provides controls 3. Or clear the app's data from Android Settings 4. Uninstalling the app also removes local app-private data</p>
       <h4>Option 2: Email Deletion Request</h4>
       <p>Send an email to: <strong>support@sudarshantechlabs.com</strong> or <strong>sunny.sudarshan@gmail.com</strong></p>
       <ul>
-      <li>Subject: &quot;Data Deletion Request - HabitForge&quot;</li>
+      <li>Subject: "Data Deletion Request - HabitForge"</li>
       <li>Include: The email/account identifier used in the app, if any</li>
       <li>We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement</li>
       </ul>
       <h4>Option 3: Web Deletion</h4>
-      <ol>
-      <li>Visit the privacy policy website for contact and support information</li>
-      <li>For browser apps, clear browser storage for the site</li>
-      <li>For Android apps, clear storage from Android Settings if you want a full local reset</li>
-      </ol>
-      <h3>What Gets Deleted</h3>
+      <p>1. Visit the privacy policy website for contact and support information 2. Uninstalling the app removes its local data 3. For Android apps, clear storage from Android Settings if you want a full local reset</p>
+      <h3>What Gets Deleted:</h3>
       <ul>
       <li>Local app data stored by the app</li>
       <li>Local preferences and reminder/history records</li>
-      <li>Cached data controlled by the app or browser</li>
+      <li>Cached data controlled by the app</li>
       <li>Exported/shared files only if you delete them from where you saved them</li>
       </ul>
-      <h3>Data Retention After Deletion</h3>
+      <h3>Data Retention After Deletion:</h3>
       <ul>
-      <li><strong>Immediate:</strong> clearing app/site data removes local app-private data from your device/browser</li>
+      <li><strong>Immediate:</strong> clearing app data removes local app-private data from your device</li>
       <li><strong>Uninstall:</strong> removes app-private local data from Android apps</li>
       <li><strong>Exports/shared files:</strong> remain wherever you saved or sent them until you delete them</li>
       </ul>
       <p>To request deletion of your data:</p>
-      <ol>
-      <li>Open HabitForge, if installed</li>
-      <li>Delete local content or clear app/site data where applicable</li>
-      <li>Contact support via email: sunny.sudarshan@gmail.com</li>
-      <li>Request account/data deletion and include enough detail for us to identify the app and any account, if one exists</li>
-      <li>We will confirm what data can be deleted and complete the request according to the retention terms above</li>
-      </ol>
-      <h2>Firebase and Google Services</h2>
-      <p>This app may use the following services depending on the features you enable and the installed version:</p>
+      <p>1. Open HabitForge, if installed 2. Delete local content or clear app/site data where applicable 3. Contact support via email: sunny.sudarshan@gmail.com 4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists 5. We will confirm what data can be deleted and complete the request according to the retention terms above</p>
+      <h2>Third-Party Services</h2>
+      <p><strong>HabitForge uses none.</strong> No Firebase, no Google Play Billing, no analytics, no advertising, no backend of ours.</p>
+      <p>The only third-party policy with any bearing on the app is Google Play's, because that is where you installed it from:</p>
       <ul>
-      <li>Google Play Billing</li>
-      </ul>
-      <p>Please review relevant third-party privacy policies:</p>
-      <ul>
-      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-      <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
       <li><a href="https://play.google.com/about/play-terms/">Google Play Terms</a></li>
-      <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a></li>
       </ul>
       <h2>About HabitForge</h2>
       <p>HabitForge is built with privacy in mind. The app is built with:</p>
@@ -226,18 +211,25 @@
       <li>Kotlin and Jetpack Compose</li>
       <li>Room/DataStore for local storage</li>
       <li>WorkManager for reminders</li>
-      <li>Google Play Billing for premium features</li>
       </ul>
-      <p>The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.</p>
+      <p>That is the whole list. There is no networking library in it, because the app makes no network calls: your data stays on your device, not "whenever possible" but always.</p>
       <hr>
-      <p><strong>Last Updated:</strong> May 17, 2026</p>
+      <p><strong>Last Updated:</strong> November 9, 2026</p>
       <hr>
+      <h2>Recent Updates (Version 1.2.0 - November 9, 2026)</h2>
+      <ul>
+      <li><strong>Removed Google Play Billing and the premium tier.</strong> The app has no in-app purchases. This policy described billing in seven places, including a permission entry saying <code>INTERNET</code> was "used for Google Play Billing".</li>
+      <li><strong>Removed Firebase.</strong> The policy named it as a security control; the app has never shipped it. The Firebase lines in its build file are commented out, on every branch.</li>
+      <li><strong>Stated that the app declares no <code>INTERNET</code> permission.</strong> Without it Android will not let the app open a network connection, which is why this policy can now say flatly that habit data cannot leave the device rather than hedging with "network communication uses HTTPS/TLS where applicable".</li>
+      <li><strong>Listed the four permissions WorkManager merges in</strong> — <code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code> and <code>ACCESS_NETWORK_STATE</code> — and explained that the last of those lets a library <em>check</em> for a network but not use one. The app declares one permission; the finished build carries five.</li>
+      <li><strong>Removed the scaffold text</strong> that this policy shared with our other apps: a "Family Groups" heading for an app with no sharing features, and references to a browser, a browser profile and GitHub accounts. HabitForge is an Android app with no web version.</li>
+      <li><strong>Said there are no third parties at all</strong>, in place of a services list that named Google Play Billing and linked the Firebase and GitHub privacy policies.</li>
+      </ul>
       <h2>Recent Updates (Version 1.1.0 - May 17, 2026)</h2>
       <ul>
       <li><strong>Aligned policy with the shared privacy-policy structure.</strong></li>
       <li><strong>Clarified local habit data, photos, notifications, and billing.</strong></li>
       </ul>
-
     </article>
   </main>
 </body>
